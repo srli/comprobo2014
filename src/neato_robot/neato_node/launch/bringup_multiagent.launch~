@@ -1,50 +1,46 @@
 <launch>
   <arg name="use_sim_time" value="false"/>
   <group ns="oscar">
+	<param name="tf_prefix" value="oscar" />
     <include file="$(find neato_node)/launch/bringup.launch">
-	<arg name="tf_prefix" value="oscar" />
 	<arg name="host" value="192.168.17.200"/>
     </include>
   </group>
   <group ns="bigbird">
+<param name="tf_prefix" value="bigbird" />
     <include file="$(find neato_node)/launch/bringup.launch">
-        <arg name="tf_prefix" value="bigbird" />
 	<arg name="host" value="192.168.17.209"/>
     </include>
   </group>
   <group ns="elmo">
+<param name="tf_prefix" value="elmo" />
     <include file="$(find neato_node)/launch/bringup.launch">
-        <arg name="tf_prefix" value="elmo" />
 	<arg name="host" value="192.168.17.202"/>
     </include>
   </group>
   <group ns="ernie">
+<param name="tf_prefix" value="ernie" />
     <include file="$(find neato_node)/launch/bringup.launch">
-       <arg name="tf_prefix" value="ernie" />
 	<arg name="host" value="192.168.17.203"/>
     </include>
   </group>
   <group ns="bert">
     <include file="$(find neato_node)/launch/bringup.launch">
-    <arg name="tf_prefix" value="bert" />
 	<arg name="host" value="192.168.17.204"/>
     </include>
   </group>
   <group ns="grover">
     <include file="$(find neato_node)/launch/bringup.launch">
-    <arg name="tf_prefix" value="grover" />
 	<arg name="host" value="192.168.17.205"/>
     </include>
   </group>
   <group ns="snuffle">
     <include file="$(find neato_node)/launch/bringup.launch">
-    <arg name="tf_prefix" value="snuffle" />
 	<arg name="host" value="192.168.17.206"/>
     </include>
   </group>
   <group ns="cookie_monster">
     <include file="$(find neato_node)/launch/bringup.launch">
-    <arg name="tf_prefix" value="cookie_monster" />
 	<arg name="host" value="192.168.17.207"/>
     </include>
   </group>

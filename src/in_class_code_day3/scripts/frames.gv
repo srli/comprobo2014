@@ -1,0 +1,11 @@
+digraph G {
+"snuffle/base_link" -> "snuffle/base_laser_link"[label="Broadcaster: /snuffle/laser_to_base\nAverage rate: 20.160 Hz\nMost recent transform: 1412027736.149 \nBuffer length: 4.911 sec\n"];
+"grover/base_link" -> "grover/base_laser_link"[label="Broadcaster: /grover/laser_to_base\nAverage rate: 20.161 Hz\nMost recent transform: 1412027736.109 \nBuffer length: 4.861 sec\n"];
+"cookie_monster/base_link" -> "cookie_monster/base_laser_link"[label="Broadcaster: /cookie_monster/laser_to_base\nAverage rate: 20.157 Hz\nMost recent transform: 1412027736.111 \nBuffer length: 4.862 sec\n"];
+"odom" -> "base_link"[label="Broadcaster: /ernie/neato\nAverage rate: 35.412 Hz\nMost recent transform: 1412027736.004 \nBuffer length: 4.885 sec\n"];
+"bigbird/base_link" -> "bigbird/base_laser_link"[label="Broadcaster: /bigbird/laser_to_base\nAverage rate: 20.163 Hz\nMost recent transform: 1412027736.117 \nBuffer length: 4.860 sec\n"];
+"oscar/base_link" -> "oscar/base_laser_link"[label="Broadcaster: /oscar/laser_to_base\nAverage rate: 20.161 Hz\nMost recent transform: 1412027736.122 \nBuffer length: 4.861 sec\n"];
+"ernie/base_link" -> "ernie/base_laser_link"[label="Broadcaster: /ernie/laser_to_base\nAverage rate: 20.160 Hz\nMost recent transform: 1412027736.123 \nBuffer length: 4.861 sec\n"];
+"bert/base_link" -> "bert/base_laser_link"[label="Broadcaster: /bert/laser_to_base\nAverage rate: 20.164 Hz\nMost recent transform: 1412027736.125 \nBuffer length: 4.860 sec\n"];
+"elmo/base_link" -> "elmo/base_laser_link"[label="Broadcaster: /elmo/laser_to_base\nAverage rate: 20.164 Hz\nMost recent transform: 1412027736.129 \nBuffer length: 4.860 sec\n"];
+}

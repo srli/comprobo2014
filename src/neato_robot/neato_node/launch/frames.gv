@@ -1,0 +1,18 @@
+digraph G {
+"bigbird/base_link" -> "bigbird/base_laser_link"[label="Broadcaster: /bigbird/laser_to_base\nAverage rate: 20.158 Hz\nMost recent transform: 1412028186.469 \nBuffer length: 4.911 sec\n"];
+"map" -> "bigbird/base_link"[label="Broadcaster: /bigbird/map_to_odom\nAverage rate: 25.149 Hz\nMost recent transform: 1412028186.471 \nBuffer length: 4.970 sec\n"];
+"elmo/base_link" -> "elmo/base_laser_link"[label="Broadcaster: /elmo/laser_to_base\nAverage rate: 20.148 Hz\nMost recent transform: 1412028186.471 \nBuffer length: 4.914 sec\n"];
+"map" -> "elmo/base_link"[label="Broadcaster: /elmo/map_to_odom\nAverage rate: 25.117 Hz\nMost recent transform: 1412028186.429 \nBuffer length: 4.897 sec\n"];
+"map" -> "ernie/base_link"[label="Broadcaster: /ernie/map_to_odom\nAverage rate: 24.845 Hz\nMost recent transform: 1412028186.470 \nBuffer length: 4.910 sec\n"];
+"map" -> "oscar/base_link"[label="Broadcaster: /oscar/map_to_odom\nAverage rate: 20.157 Hz\nMost recent transform: 1412028186.471 \nBuffer length: 4.911 sec\n"];
+"bert/base_link" -> "bert/base_laser_link"[label="Broadcaster: /bert/laser_to_base\nAverage rate: 20.163 Hz\nMost recent transform: 1412028186.431 \nBuffer length: 4.860 sec\n"];
+"map" -> "bert/base_link"[label="Broadcaster: /bert/map_to_odom\nAverage rate: 24.479 Hz\nMost recent transform: 1412028186.458 \nBuffer length: 4.861 sec\n"];
+"grover/base_link" -> "grover/base_laser_link"[label="Broadcaster: /grover/laser_to_base\nAverage rate: 20.152 Hz\nMost recent transform: 1412028186.441 \nBuffer length: 4.863 sec\n"];
+"map" -> "grover/base_link"[label="Broadcaster: /grover/neato\nAverage rate: 24.882 Hz\nMost recent transform: 1412028186.441 \nBuffer length: 4.863 sec\n"];
+"oscar/base_link" -> "oscar/base_laser_link"[label="Broadcaster: /oscar/laser_to_base\nAverage rate: 20.153 Hz\nMost recent transform: 1412028186.442 \nBuffer length: 4.863 sec\n"];
+"ernie/base_link" -> "ernie/base_laser_link"[label="Broadcaster: /ernie/laser_to_base\nAverage rate: 20.161 Hz\nMost recent transform: 1412028186.439 \nBuffer length: 4.861 sec\n"];
+"map" -> "snuffle/base_link"[label="Broadcaster: /snuffle/map_to_odom\nAverage rate: 23.248 Hz\nMost recent transform: 1412028186.458 \nBuffer length: 4.861 sec\n"];
+"cookie_monster/base_link" -> "cookie_monster/base_laser_link"[label="Broadcaster: /cookie_monster/laser_to_base\nAverage rate: 20.162 Hz\nMost recent transform: 1412028186.461 \nBuffer length: 4.861 sec\n"];
+"map" -> "cookie_monster/base_link"[label="Broadcaster: /cookie_monster/neato\nAverage rate: 23.441 Hz\nMost recent transform: 1412028186.463 \nBuffer length: 4.863 sec\n"];
+"snuffle/base_link" -> "snuffle/base_laser_link"[label="Broadcaster: /snuffle/laser_to_base\nAverage rate: 20.164 Hz\nMost recent transform: 1412028186.467 \nBuffer length: 4.860 sec\n"];
+}

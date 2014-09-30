@@ -51,6 +51,7 @@ class NeatoNode:
         """ Start up connection to the Neato Robot. """
         rospy.init_node('neato')
 
+        self.tf_prefix = rospy.get_param('~tf_prefix', "")
         self.port = rospy.get_param('~port', "/dev/ttyUSB0")
         rospy.loginfo("Using port: %s"%(self.port))
 
@@ -140,7 +141,7 @@ class NeatoNode:
                 odom.pose.pose.orientation = quaternion
                 odom.twist.twist.linear.x = dx/dt
                 odom.twist.twist.angular.z = dth/dt
-                self.odomBroadcaster.sendTransform( (self.x, self.y, 0), (quaternion.x, quaternion.y, quaternion.z, quaternion.w), curr_motor_time, "base_link", "odom" )
+                self.odomBroadcaster.sendTransform( (self.x, self.y, 0), (quaternion.x, quaternion.y, quaternion.z, quaternion.w), curr_motor_time, self.tf_prefix + "/base_link", self.tf_prefix + "/odom" )
                 self.odomPub.publish(odom)
                 print 'Got motors %f' % (time.time() - t_start)
             except:
